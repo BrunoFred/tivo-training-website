@@ -1,0 +1,376 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #5f4dee;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul { 
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    width: 50%;
+    float: left;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    width: 10%;
+    margin-right: 20px;
+}
+
+.items {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+
+/* Fora da nav */
+
+.container {
+    padding-top: 75px;
+}
+
+.inital-content{
+    background-color: #5f4dee;
+    display: grid;
+}
+
+.img-div {
+    justify-content: end;
+    grid-column-start: 6;
+    grid-column-end: 12;
+}
+
+.right-image {
+    max-height: 500px;
+    max-width: 650px;
+    padding-top: 100px;
+    float: right;
+}
+
+.left-text {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center;
+}
+
+.left-text h1{
+    align-content: center;
+    justify-content: space-evenly;
+    font-size: 43px;
+    color: white;
+    padding: 0px 75px;
+}
+
+.left-text p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    padding: 0px, 75px;
+    color: white;
+}
+
+.discover-button, .signup-button:hover {
+    background-color: white;
+    color: #5f4dee;
+}
+
+.discover-button:hover {
+    background-color: #5f4dee;
+    color: white;
+}
+
+
+.signup-button {
+    background-color: #5f4dee;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: start;
+    padding: 0px 75px;
+}
+
+.discover-button, .signup-button {
+    padding: 15px;
+    margin: 10px 20px 10px 0px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.clients{
+    padding: 0px 40px;
+    margin: 50px 0px 50px 0px;
+}
+
+.description{
+    color: #5f4dee;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.description-heading{
+    width: 40.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.2px;
+    text-align: center;
+    font: bold;
+}
+                                            /* Features */
+.container-features{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-image, .featuring-title, .featuring-text {
+    justify-content: center;
+}
+
+/* .image{
+    max-width: 200px;
+    height: 200px;
+} */
+
+.featuring-title{
+    font-weight: bold;
+    color: #2f363b;
+    margin-bottom: 15px;
+}
+
+.featuring-text{
+    color: #6b747b;
+    text-align: center;
+    margin-bottom: 0px 40px;
+}
+                                            /* Footer */
+
+.container-footer{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    padding-top: 50px;
+    background-color: #5f4dee;
+}
+
+.footer-title, .footer-text{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-text{
+    color: #ffffff;
+    text-align: left;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+    *  {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav {
+        background-color: #5f4dee;
+        padding: 1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
+
+    nav ul { 
+        display: flex;
+        justify-content: right;
+        margin-right: 50px;
+    }
+    
+    .logo {
+        display: flex;
+        width: 50%;
+        float: left;
+    }
+    
+    .logo img {
+        width: 60%;
+        margin-right: 20px;
+    }
+    
+    .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: small;
+    }
+
+                                    /* Fim da parte da NavBar */
+
+    .inital-content{
+        background-color: #5f4dee;
+        grid-column-start: 1 !important;
+        grid-column-end: 12 !important;
+    }
+    
+    .img-div {
+        grid-column-start: 1 !important;
+        grid-column-end: 12 !important;
+        justify-content: center;
+    }
+
+    .img-div img {
+        width: 100%;
+    }
+    
+    .right-image {
+        max-height: 500px;
+        max-width: 650px;
+        padding-top: 100px;
+    }
+    
+    .left-text {
+        grid-column-start: 1 !important;
+        grid-column-end: 12 !important;
+    }
+    
+    .left-text h1{
+        text-align: left;
+        font-size: 2.5rem;
+        color: white;
+        padding: 70px 20px;
+    }
+    
+    .left-text p{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+
+        font-size: 1.125rem;
+        margin-bottom: 2.125rem;
+        color: white;
+    }
+                           /* Botões */
+    .discover-button, .signup-button:hover {
+        background-color: white;
+        color: #5f4dee;
+    }
+    
+    .discover-button:hover {
+        background-color: #5f4dee;
+        color: white;
+    }
+    
+    
+    .signup-button {
+        background-color: #5f4dee;
+        color: white;
+    }
+ 
+    .button {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 55px;
+    }
+    
+    .discover-button, .signup-button {
+        padding: 10px;
+        margin: 10px 20px 10px 0px;
+        border: 1px solid white;
+        border-radius: 30%;
+        font-size: 18px;
+    }
+    
+                            /* Clientes */
+
+    .clients{
+        padding: 0px 120px;
+        margin: 50px 0px 50px 0px;
+    }
+    
+                            /* Description */
+
+    .initial-description{
+        display: grid;
+        grid-column-start: 1 !important;
+        grid-column-end: 12 !important;
+    }
+
+    .description-heading{
+        width: 100%;
+    }
+
+                        /* Features */
+
+    .container-image .image{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .featuring-title{
+        text-align: center;
+    }
+
+    .featuring-text{
+        text-align: center;
+    }
+
+                        /* Footer */
+    
+    .footer-title, .footer-text{
+        justify-content: left;
+    }
+
+    .footer-text{
+        padding: 0px 0px 0px 0px;
+    }
+}
