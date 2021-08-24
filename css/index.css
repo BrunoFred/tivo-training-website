@@ -45,13 +45,50 @@ a {
     margin-right: 20px;
 }
 
-.items {
-    width: 50%;
+.dropbtn {
+    background-color: #5f4dee;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .items {
+    position: relative;
     float: right;
-    display: flex;
-    justify-content: flex-end;
+    padding-right: 50px;
     list-style: none;
-}
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #5f4dee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10%;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  
+  .dropdown-content a:hover {background-color: #5f4dee;}
+  
+  .items:hover .dropdown-content {
+    display: block;
+  }
+  
+  .items:hover .dropbtn {
+    background-color: #5f4dee;
+  }
 
 
 /* Fora da nav */
@@ -436,7 +473,7 @@ a {
 
 }
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
     .nav{
         padding: 15px;
     }
@@ -509,4 +546,4 @@ a {
         justify-content: left;
         padding: 0px 0px 0px 30px;
     }
-} */
+}
