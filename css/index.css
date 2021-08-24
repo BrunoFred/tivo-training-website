@@ -213,15 +213,12 @@ a {
     margin-bottom: 2rem;
 }
 
+                                /* Screen 400px */
+
 @media only screen and (max-width: 400px) {
-    *  {
-        margin: 0;
-        padding: 0;
-    }
-    
     .nav {
         background-color: #5f4dee;
-        padding: 1px;
+        padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -231,10 +228,10 @@ a {
 
     nav ul { 
         display: flex;
-        justify-content: right;
+        justify-content: center;
         margin-right: 50px;
     }
-    
+
     .logo {
         display: flex;
         width: 50%;
@@ -292,7 +289,6 @@ a {
     .left-text p{
         text-align: center;
         font-family: 'Quicksand', sans-serif;
-
         font-size: 1.125rem;
         margin-bottom: 2.125rem;
         color: white;
@@ -374,3 +370,143 @@ a {
         padding: 0px 0px 0px 0px;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .nav{
+        padding: 20px;
+    }
+
+    .logo img{
+        width: 20%;
+    }
+
+    .left-text h1{
+        padding: 100px 50px 0px 50px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .left-text p{
+        padding: 40px 50px;
+    }
+
+    .button{
+        justify-content: center;
+    }
+
+    .discover-button, .signup-button{
+        margin: 10px 20px;
+    }
+
+    .img-div{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        justify-content: center;
+    }
+    
+    .clients{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-image .image{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .featuring-title{
+        text-align: center;
+    }
+
+    .container-footer{
+        display: block;
+    }
+
+    .featuring-text{
+        text-align: center;
+    }
+
+    .footer-title, .footer-text{
+        justify-content: left;
+        padding: 0px 0px 0px 30px;
+    }
+
+}
+
+/* @media only screen and (max-width: 1200px) {
+    .nav{
+        padding: 15px;
+    }
+
+    .logo img{
+        width: 20%;
+    }
+
+    .left-text h1{
+        padding: 100px 50px 0px 50px;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .left-text p{
+        text-align: left;
+        padding: 40px 50px;
+    }
+
+    .button{
+        justify-content: left;
+    }
+
+    .discover-button, .signup-button{
+        margin: 10px 20px;
+    }
+
+    .img-div{
+        display: grid;
+        grid-column-start: 6;
+        grid-column-end: 12;
+        justify-content: center;
+    }
+    
+    .clients{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-features{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }    
+
+    .container-image .image{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .featuring-title{
+        text-align: center;
+    }
+
+    .featuring-text{
+        text-align: center;
+    }
+
+    .container-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 50px;
+        background-color: #5f4dee;
+    }
+
+    .footer-title, .footer-text{
+        justify-content: left;
+        padding: 0px 0px 0px 30px;
+    }
+} */
