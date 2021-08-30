@@ -9,23 +9,33 @@
     <link type="text/css" rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <section>
-        <nav>
-            <div class="nav">
-                <div class="logo">
-                    <img src="./imgs/nightmoon.jpg" alt="nightmoon">
-                </div>
-                <ul class="items">
-                    <button class="dropbtn">Menu</button>
-                    <div class="dropdown-content">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Details</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    </div>
-                </ul>
+    <section class=desktop>
+        <nav class="nav-desktop">
+            <div class="logo-desktop">
+                <img src="imgs/logo.svg" alt="Tivo">
+            </div>
+            
+            <div class="items">
+                <a href="#">Features</a>
+                <a href="#">Details</a>
+                <a href="#">Pricing</a>
             </div>
         </nav>
+    </section>
+
+    <section class="mobile">
+        <nav class="nav-mobile">
+            <div class="logo">
+                <img src="imgs/logo.svg" alt="Tivo">
+            </div>
+            <a href="#" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+
+        <div id="menu" class="menu-hover">
+            <a href="#">Features</a>
+            <a href="#">Details</a>
+            <a href="#">Pricing</a>
+        </div>
     </section>
 
     <section class="container">       
@@ -39,19 +49,31 @@
                         <a href="#" class="signup-button">Sign Up</a>
                     </div>
                 </div>
-
-                <div class="img-div">
-                    <img class="right-image" src="./imgs/working2.jpg">
+                
+                <div class="mySlides fade">
+                    <img class="carousel-image" src="./imgs/working1.jpg">
                 </div>
+                <div class="mySlides fade">
+                    <img class="carousel-image" src="./imgs/working2.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img class="carousel-image" src="./imgs/working3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img class="carousel-image" src="./imgs/working4.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img class="carousel-image" src="./imgs/working5.jpg">
+                </div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
             </div>
 
                 <div class="clients">
                     <img class="amplifier" src="imgs/amplifier.png">
-                   <!--<img class="upstart" src="imgs/upstart.png">-->
-                    <!--<img class="primester" src="imgs/primester.png">-->
-                    <!--<img class="greenapp" src="imgs/greenapp.png">-->
-                    <!--<img class="voltmeter" src="imgs/voltmeter.png">-->
-                   <!--<img class="keyrunner" src="imgs/keyrunner.png">-->
                 </div>
             </div>
 
@@ -125,7 +147,7 @@
                                     <a href="#">Sign Up</a>,
                                     <a href="#">Log In</a>,
                                     <a href="#">Terms</a>,
-                                    <a href="#">Privacy</a>
+                                    <a href="#">Privacy</a><br>
                                     Menu: <a href="#">Home</a>,
                                     <a href="#">Features</a>,
                                     <a href="#">Details</a>,
@@ -149,7 +171,8 @@
                         </div>
                     </div>
                 </section>
-            </section> 
+            </section>
     </section>
+    <script src="carousel.js"></script>
 </body>
 </html>
