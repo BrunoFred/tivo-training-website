@@ -439,15 +439,11 @@ a{
 
     .left-text p{
         text-align: left;
-    }
-
-    .discover-button, .signup-button{
-        margin: 10px 20px;
+        padding: 0px 80px;
     }
 
     .carousel-image{
-        width: 450px;
-        padding: 10px;
+        width: 400px;
     }
     
     .container-image .image{
