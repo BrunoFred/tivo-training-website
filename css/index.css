@@ -405,6 +405,25 @@ a{
         margin: 10px 20px;
     }
 
+    .general-imagems{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        justify-content: center;
+    }
+
+    .mySlides{
+        grid-column-start: 1;
+        grid-column-end: 12;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .carousel-image{
+        width: 0;
+    }
+
     .container-features{
         grid-template-columns: 1fr;
     }
@@ -430,12 +449,6 @@ a{
 }
 
 @media only screen and (max-width: 1200px){
-
-    /* .left-text h1{
-        padding: 100px 50px 0px 50px;
-        font-size: 2rem;
-        text-align: left;
-    } */
 
     .left-text p{
         text-align: left;
