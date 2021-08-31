@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <section class=desktop>
+    <!-- <section class=desktop>
         <nav class="nav-desktop">
             <div class="logo-desktop">
                 <img src="imgs/logo.svg" alt="Tivo">
@@ -19,7 +19,9 @@
                 <a href="#">Features</a>
                 <a href="#">Details</a>
                 <a href="#">Pricing</a>
+                <a href="#" onclick="openModal()">Contacts</a>
             </div>
+
         </nav>
     </section>
 
@@ -35,8 +37,9 @@
             <a href="#">Features</a>
             <a href="#">Details</a>
             <a href="#">Pricing</a>
+            <a href="#" onclick="openModal()">Contacts</a>
         </div>
-    </section>
+    </section> -->
 
     <section class="container">       
             <div class="inital-content">
@@ -49,8 +52,8 @@
                         <a href="#" class="signup-button">Sign Up</a>
                     </div>
                 </div>
-                
-                <div class="mySlides fade">
+                <div class="general-imagems">
+                               <div class="mySlides fade">
                     <img class="carousel-image" src="./imgs/working1.jpg">
                 </div>
                 <div class="mySlides fade">
@@ -70,9 +73,10 @@
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
+                </div>
             </div>
 
-                <div class="clients">
+                <!-- <div class="clients">
                     <img class="amplifier" src="imgs/amplifier.png">
                 </div>
             </div>
@@ -173,6 +177,42 @@
                 </section>
             </section>
     </section>
+    <section class="section-modal">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <form method="get" action=".">
+                    <h1>Formulário de Contato</h1><br>
+                    <label>Nome:</label>
+                    <input name="nome" type="text" id="nome" size="40" />
+                    <label>Email:</label>
+                        <input name="email" type="email" id="email" size="40" />
+                    <label>Assunto:</label>
+                    <input name="assunto" type="text" id="assunto" size="40" />
+                    <label>Mensagem:</label>
+                    <input name="mensagem" type="text" id="mensagem" size="40" />
+                    <label>Cep:</label>
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                           onblur="pesquisacep(this.value);" />
+                    <label>Rua:</label>
+                    <input name="rua" type="text" id="rua" size="40" />
+                    <label>Bairro:</label>
+                    <input name="bairro" type="text" id="bairro" size="40" />
+                    <label>Cidade:</label>
+                    <input name="cidade" type="text" id="cidade" size="40" />
+                    <label>Estado:</label>
+                    <input name="uf" type="text" id="uf" size="2" />
+                    <label>Numero:</label>
+                    <input name="numero" type="text" id="numero" size="8" />
+                    <label>Complemento:</label>
+                    <input name="complemento" type="text" id="complemento" size="40" />
+                </form>
+                <div class="form-button">
+                    <a href="#" class="register-button">Registrar</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <script src="carousel.js"></script>
 </body>
 </html>
