@@ -34,7 +34,7 @@ function myFunction() {
 function openModal(){
   var modal = document.getElementById("myModal");
   if (modal){
-    modal.style.display = "grid";
+    modal.style.display = "block";
   }
 }
 
